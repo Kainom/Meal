@@ -26,7 +26,7 @@ const items: Item[] = [
 
 const SideBar = () => {
   return (
-    <div className="flex h-screen flex-col w-64 bg-background-light border-r border-gray-700">
+    <div className="flex h-screen flex-col w-64 bg-background-lighter border-r border-y-border-lightSecondary">
       <h2 className="text-text-dark font-bold p-4 text-xl  bg-background-lightSecondary">Meal</h2>
       <ul className="flex flex-col list-none p-4 gap-4">
         <li className="flex items-center">

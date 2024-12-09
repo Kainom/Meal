@@ -24,16 +24,24 @@ export default {
         },
         text: {
           dark: "#333333",
+          light: "#F2F2F2",
         },
         background: {
           light: "#F2F2F2",
           dark: "#333333",
           lightSecondary: "#F5DEB3",
+          lighter: "#F8F8F8",
+          red: "#FF4500",
         },
         gradient: {
           from: "#FF4500",
           to: "#FFD700",
         },
+        border:{
+          dark: "#333333",
+          light: "#F2F2F2",
+          lightSecondary: "#F5DEB3",
+        }
       },
     },
   },
