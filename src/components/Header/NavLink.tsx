@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 export default () => {
   const path: string = usePathname();
-  
+
   return (
     <>
       <div className="flex min-[393px]:gap-10 items-center  ">
@@ -40,17 +40,17 @@ export default () => {
               Foodies Community
             </Link>
             <Link
-              href={""}
+              href={"meals"}
               className={`cursor-pointer ${
-                path.startsWith("/about")
+                path.startsWith("/meals")
                   ? "text-primary-red"
                   : "hover:text-primary-red"
               } transition-all duration-200`}
             >
-              About
+              Meals
             </Link>
             <Link
-              href={""}
+              href={"/"}
               className={`cursor-pointer ${
                 path.startsWith("/contact")
                   ? "text-primary-red"

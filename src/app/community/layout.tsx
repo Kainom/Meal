@@ -2,16 +2,14 @@ import Header from "@/components/Header/Header";
 import SideBar from "@/components/SideBar";
 import React from "react";
 
-export default function MealLayout({
-  children,
-}: Readonly<{
+type Children = {
   children: React.ReactNode;
-}>) {
+};
+
+export default function CommunityLayout({ children }: Readonly<Children>) {
   return (
     <>
-      <main className="">
-        {children}
-      </main>
+      {children}
     </>
   );
 }
