@@ -1,12 +1,17 @@
-import React from "react";
+import React, { Suspense } from "react";
 import classe from "./page.module.css";
 import Link from "next/link";
 import MealsGrid from "@/components/meals/MealsGrid";
 import getMeals from "../../../lib/meals";
+import MealsLoading from "./loading-out";
 
-export default async function Meals() {
-  // Fetch data from your API
+const Meals: any = async (): Promise<any> => {
   const meals = await getMeals();
+  return <MealsGrid meals={meals} />;
+};
+
+export default async function MealsPage() {
+  // Fetch data from your API
 
   return (
     <React.Fragment>
@@ -36,7 +41,9 @@ export default async function Meals() {
         </p>
       </header>
       <main className={classe.main}>
-        <MealsGrid meals={meals} />
+        <Suspense fallback={<MealsLoading/>}>
+          <Meals />
+        </Suspense>
       </main>
     </React.Fragment>
   );

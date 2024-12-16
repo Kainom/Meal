@@ -3,7 +3,7 @@
     margin: 3rem auto 5rem auto;
     width: 90%;
     max-width: 75rem;
-    @apply text-text-dark;
+    @apply text-text-light;
     font-size: 1.5rem;
     text-align: center;
   }
@@ -33,7 +33,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     margin-bottom: 3rem;
-    @apply text-text-dark;
+    @apply text-text-light;
   }
   
   .perks {
@@ -60,5 +60,5 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
-    @apply text-text-dark;
+    @apply text-text-light;
   }

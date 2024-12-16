@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 
 export default () => {
   return (
-    <header className="min-[894px]:pl-20 bg-background-lighter flex border-b  border-b-slate-200 max-[341px]:justify-start justify-between h-36 items-center ">
+    <header className="min-[894px]:pl-20 bg-background-darkHeavy flex border-b  border-b-background-dark max-[341px]:justify-start justify-between h-36 items-center ">
       <NavLink />
       <div className="flex  items-center gap-4 min-[393px]:px-12 ">
         <Link

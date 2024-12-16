@@ -7,6 +7,7 @@ import Food4 from "../../public/food4.jpg";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import classe from "./food.module.css"
 
 interface Food {
   src: StaticImport | any;
@@ -24,7 +25,7 @@ const FoodSlide = () => {
   useEffect(() => {
     const interval: any = setInterval(() => {
       setFood((prev) => (prev < foods.length - 1 ? prev + 1 : 0));
-    }, 5000);
+    }, 3000);
     console.log(food);
     return () => clearInterval(interval);
   }, []);
@@ -32,7 +33,7 @@ const FoodSlide = () => {
   return (
     <main className="p-4 pb-10 mt-5 flex justify-center gap-10 flex-wrap">
         <Image
-          className="rounded-md transition-opacity opacity-1 duration-75"
+          className={`rounded-md transition-opacity opacity-1 duration-75 ${classe.anime}`}
           loading="lazy"
           width={440}
           height={300}

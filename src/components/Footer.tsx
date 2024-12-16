@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="flex justify-center items-center p-10 bg-background-lighter text-text-dark border-t border-slate-200">
+      <footer className="flex justify-center items-center p-10  text-text-light border-t border-background-dark bg-background-darkHeavy">
         &copy;{new Date().getFullYear()} MealApp. All rights reserved.
       </footer>
     </>

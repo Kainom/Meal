@@ -40,9 +40,9 @@ export default () => {
               Foodies Community
             </Link>
             <Link
-              href={"meals"}
+              href={"/meals"}
               className={`cursor-pointer ${
-                path.startsWith("/meals")
+                path === "/meals"
                   ? "text-primary-red"
                   : "hover:text-primary-red"
               } transition-all duration-200`}

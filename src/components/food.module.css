@@ -1,0 +1,8 @@
+@keyframes assetAnim {
+
+}
+
+
+.anime{
+    animation: assetAnim 2s infinite;
+}
