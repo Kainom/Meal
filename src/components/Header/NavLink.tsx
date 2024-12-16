@@ -50,14 +50,14 @@ export default () => {
               Meals
             </Link>
             <Link
-              href={"/"}
+              href={"/meals/share"}
               className={`cursor-pointer ${
-                path.startsWith("/contact")
+                path === "/meals/share"
                   ? "text-primary-red"
                   : "hover:text-primary-red"
               } transition-all duration-200`}
             >
-              Contact
+              Share
             </Link>
           </ul>
         </nav>

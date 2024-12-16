@@ -16,6 +16,7 @@ interface MyProps {
 }
 
 const MealsGrid: React.FC<MyProps> = ({ meals }): React.ReactNode => {
+  console.log()
   return (
     <React.Fragment>
       <ul className={classes.meals}>

@@ -18,13 +18,14 @@ export const MealItem = ({
   summary,
   image,
 }: MyProps): JSX.Element => {
+  console.log(image);
   return (
     <React.Fragment>
       {" "}
       <article className={classes.meal}>
         <header>
           <div className={classes.image}>
-            <Image src={image} alt={title} />
+            <Image src={image} alt={title} fill />
           </div>
           <div className={classes.headerText}>
             <h2>{title}</h2>
