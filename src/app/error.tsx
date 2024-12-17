@@ -1,8 +1,4 @@
-
-
-export default function Error():JSX.Element{
-    return(
-        <h1>Error Page</h1>
-    )
-
+"use client";
+export default function Error(): JSX.Element {
+  return <h1>Error Page</h1>;
 }

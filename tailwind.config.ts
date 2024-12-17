@@ -26,6 +26,7 @@ export default {
         text: {
           dark: "#333333",
           light: "#F2F2F2",
+          pepper:"#fd4715",
         },
         background: {
           light: "#F2F2F2",
