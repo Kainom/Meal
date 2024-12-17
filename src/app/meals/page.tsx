@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import classe from "./page.module.css";
 import Link from "next/link";
-import MealsGrid from "@/components/meals/MealsGrid";
 import getMeals from "../../../lib/meals";
+import MealsGrid from "@/components/meals/MealsGrid";
 import MealsLoading from "./loading-out";
 
 const Meals: any = async (): Promise<any> => {

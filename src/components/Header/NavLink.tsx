@@ -10,15 +10,17 @@ export default () => {
   return (
     <>
       <div className="flex min-[393px]:gap-10 items-center  ">
-        <Image
-          src={Burguer}
-          width={100}
-          height={100}
-          alt="Burguer logo"
-          className="cursor-pointer hover:scale-110 transition-all duration-200
+        <Link href={"/"}>
+          <Image
+            src={Burguer}
+            width={100}
+            height={100}
+            alt="Burguer logo"
+            className="cursor-pointer hover:scale-110 transition-all duration-200
           max-[341px]:hidden
           "
-        ></Image>
+          ></Image>
+        </Link>
         <nav className="max-[900px]:hidden">
           <ul className="flex gap-12 pt-2 text  ">
             <Link

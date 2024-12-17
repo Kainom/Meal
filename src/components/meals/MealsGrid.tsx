@@ -5,10 +5,12 @@ import MealItem from "./MealItem";
 type Meal = {
   id: number;
   title: string;
-  creator: string;
   slug: string;
-  summary: string;
   image: string;
+  summary: string;
+  instructions: string;
+  creator: string;
+  creator_email: string;
 };
 
 interface MyProps {
