@@ -1,4 +1,5 @@
- import classes from './page.module.css'; 
+ import ImagePicker from '@/components/meals/ImagePicker';
+import classes from './page.module.css'; 
   function ShareMeal(){
     return (
         <>
@@ -33,11 +34,11 @@
                 <textarea
                   id="instructions"
                   name="instructions"
-                  rows="10"
+                  rows={10}
                   required
                 ></textarea>
               </p>
-              IMAGE PICKER
+              <ImagePicker/>
               <p className={classes.actions}>
                 <button type="submit">Share Meal</button>
               </p>
