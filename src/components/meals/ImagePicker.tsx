@@ -59,6 +59,8 @@ const ImagePicker: React.FC<Props> = ({
             name={name}
             ref={imageInputRef}
             onChange={handleImageChange}
+            required
+            
           />
           <button
             className={`${classes.button} mt-4`}
