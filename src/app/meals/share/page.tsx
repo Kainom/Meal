@@ -1,30 +1,8 @@
 import ImagePicker from "@/components/meals/ImagePicker";
 import classes from "./page.module.css";
-
-interface MealPost {
-  title: string;
-  slug: string;
-  image: string;
-  summary: string;
-  instructions: string;
-  creator: string;
-  creator_email: string;
-}
+import { shareMeal } from "../../../../lib/shareActions/action";
 
 function ShareMeal() {
-  async function shareMeal(formData:any) {
-    "use server";
-    const meal: MealPost = {
-      title: formData.get("title"),
-      slug: formData.get("title").toLowerCase().replace(/\s/g, "-"),
-      image: formData.get("image"), 
-      summary: formData.get("summary"),
-      instructions: formData.get("instructions"),
-      creator: formData.get("name"),
-      creator_email: formData.get("email"),
-    };
-    console.log(meal);
-  }
   return (
     <>
       <header className={classes.header}>
