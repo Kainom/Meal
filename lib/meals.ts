@@ -23,7 +23,7 @@ interface Meal extends Meals {
 }
 interface MealPost extends Omit<Meals, "image"> {
   image: File;
-}
+} 
 
 async function getMeals(): Promise<Meal[]> {
   await new Promise((resolve) => setTimeout(resolve, 2000));
