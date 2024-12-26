@@ -11,7 +11,6 @@ const Meals: any = async (): Promise<any> => {
 };
 
 export default async function MealsPage() {
-  // Fetch data from your API
 
   return (
     <React.Fragment>

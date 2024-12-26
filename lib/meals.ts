@@ -2,8 +2,7 @@ import sql from "better-sqlite3";
 import type { Database } from "better-sqlite3";
 import slugify from "slugify";
 import xss from "xss";
-import { shareMeal } from "./shareActions/action";
-import * as fs from "fs/promises";
+import * as fs from 'fs/promises';
 import path from "node:path";
 import { File } from "node:buffer";
 

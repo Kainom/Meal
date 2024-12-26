@@ -13,7 +13,7 @@ interface MealPost {
   creator_email: any | null;
 }
 export async function shareMeal(formData: any) {
-  const meal: MealPost = {
+  const meal: any = {
     title: formData.get("title"),
     image: formData.get("image"),
     slug: "",
@@ -22,7 +22,6 @@ export async function shareMeal(formData: any) {
     creator: formData.get("name"),
     creator_email: formData.get("email"),
   };
-  console.log(meal);
   await save(meal);
   redirect("/meals");
 }

@@ -1,3 +1,4 @@
+// "use client";  
 import Image from "next/image";
 import classes from "./page.module.css";
 import { getMeal } from "../../../../lib/meals";
@@ -17,9 +18,11 @@ interface Meals {
 async function Meal({ params }: { params: Params }): Promise<JSX.Element> {
   const { mealslug }: Params = await params;
   const meal: Meals = getMeal(mealslug);
+
   if(!meal){
     notFound();
   }
+
   meal.instructions = meal.instructions.replace(/\n/g, "<br/>");
   return (
     <>
