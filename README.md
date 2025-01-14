@@ -1,39 +1,52 @@
-# Meal
-First project in Next.js of a Meal app 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽️  Meals Application
 
-## Getting Started
+Este projeto é uma aplicação simples construída com **Next.js** e um banco de dados **SQLite** embutido. Ele permite que os usuários compartilhem e visualizem receitas de refeições de maneira rápida e eficaz.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📂 Estrutura do Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Diretórios e Arquivos Raiz
+- **`📁 lib`**: Contém bibliotecas ou utilitários adicionais.
+- **`📁 public`**: Recursos públicos (imagens, ícones etc.) acessíveis diretamente pelo navegador.
+- **`📁 src`**: Contém o código-fonte principal da aplicação.
+- **`📝 initdb.ts`**: Script de inicialização do banco de dados SQLite.
+- **`📄 meals.db`**: Arquivo do banco de dados SQLite com as receitas armazenadas.
+- **`⚙️ .eslintrc.json`** e **`⚙️ tsconfig.json`**: Configurações de linting e TypeScript, respectivamente.
+- **`🎨 tailwind.config.ts`** e **`🎨 postcss.config.mjs`**: Configurações para estilização usando Tailwind CSS.
+- **`⚙️ next.config.ts`**: Configurações específicas do Next.js.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Diretório `src`
+- **`📁 app`**: Contém as rotas e páginas da aplicação.
+- **`📁 assets`**: Recursos estáticos específicos da aplicação (como imagens internas).
+- **`📁 components`**: Componentes reutilizáveis que compõem a interface do usuário.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Funcionalidades
+- 🥘 Compartilhamento de receitas de refeições.
+- 👀 Visualização de receitas compartilhadas por outros usuários.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Configuração e Inicialização
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicialize o banco de dados SQLite:
+   ```bash
+   npm run initdb
+   ```
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
+![kainom_assinatura](https://github.com/user-attachments/assets/9e8bb601-8d31-43a0-8831-2e38cd5ec9ff)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> c0f8232 (Initial commit from Create Next App)
